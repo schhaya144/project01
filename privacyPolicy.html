@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy</title>
+    <!-- css file  -->
+    <link rel="stylesheet" href="/pagesStyle.css">
+    <!-- bootstrap  cdn-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome cdn  -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="m-2">
+
+      <!-- nav start  -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- center logo  -->
+          <div class="navbar-brand">
+            <img
+              src="image/sCALEKITE_LOGO1.jpg"
+              alt=""
+              class="img-fluid"
+              height="47"
+              width="140"
+            />
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                SCALEKITe
+              </h5>
+            </div>
+            <!-- menubar items on the left  -->
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-start flex-grow-1 pe-3 fw-medium"
+                id="manu-navbar"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active " aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active " href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+         <!-- Icons on the right  -->
+         <div class="d-flex align-items-center ml-auto">
+          <a
+            class="nav-link pe-3"
+            href="#"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            title="search"
+          >
+            <i
+              class="fa-solid fa-magnifying-glass fa-lg"
+              style="color: rgb(0, 0, 0)"
+            ></i>
+          </a>
+          <a
+            class="nav-link d-none d-lg-inline pe-3"
+            href="#"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            title="Wish-list"
+          >
+            <i class="fa-regular fa-star fa-lg" style="color: rgb(0, 0, 0)"></i>
+          </a>
+          <a
+            class="nav-link pe-3"
+            href="#"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            title="Cart"
+          >
+            <i
+              class="fa-solid fa-cart-shopping fa-lg"
+              style="color: rgb(0, 0, 0)"
+            ></i>
+          </a>
+        </div> <!--nav itcons ends here -->
+
+
+         <!-- *********************search_bar_start_here********************** -->
+
+         <div id="search-slider">
+          <div id="search-content">
+
+            <!-- Your search form goes here -->
+            <form class="row justify-content-around m-3">
+              <div class="col-3"> <img src="image/sCALEKITE_LOGO1.jpg" height="60px" width="150px" alt=""></div>
+              <div class="col-6 row">
+                <div class="col-11 p-0 m-0"><input class="form-control mr-sm-2 " style="border: 2px solid black;"
+                    type="search" placeholder="Search" aria-label="Search"></div>
+                <div class="col-1 p-0 m-0"
+                  style="border-right: 2px solid black; border-bottom: 2px solid black; border-top: 2px solid black;height: 40px;">
+                  <button class="btn border-0 my-2 my-sm-0 col-1" type="submit"> <i
+                      class="fa-solid fa-magnifying-glass "></i></button>
+                </div>
+              </div>
+              <div class="col-3 row">
+                <div class="col-10"></div>
+                <a class="nav-link d-none d-lg-inline mt-2 col-1 " href="#" data-bs-toggle="tooltip"
+                  data-bs-placement="bottom" title="Wish-list">
+                  <i class="fa-regular fa-star fa-lg"></i>
+                </a>
+                <a class="nav-link pe-3 col-1 mt-2 " href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="Cart">
+                  <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                </a>
+
+              </div>
+            </form>
+
+            <div class="d-flex justify-content-center">
+              <span class="text-secondary"> Popular Searches:</span>
+              <span><a class="link-dark" href="">Contractors</a></span> <span><a class="link-dark" href="">Excel
+                  templates</a></span> <span><a class="link-dark" href="">All access pass</a></span>
+            </div>
+            <div class="row position-relative" style="width: 40px; bottom: 10px; left: 1500px;">
+              <button type="button" class="close  border-0 " aria-label="Close" onclick="toggleSearchSlider()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- *********************search_bar_end_here********************** -->
+
+
+            <!-- *************************addToCart_start************************ -->
+
+        <!-- Add to Cart page -->
+        <div id="cart-page" class="position-fixed top-0 end-0 vh-100 overflow-auto bg-white">
+          <div class="p-3">
+
+            <h5 class="mb-1">Shopping Cart <span><button type="button" class=" btn-close m-3 ml-5"
+                  onclick="closeCartPage()"></button></span></h5>
+
+
+            <p style="font-size: 14px;">🔥 These products are limited, checkout within 4 m 20 s</p>
+            <!-- Add your cart items here -->
+            <div class="">
+              <div class="row">
+                <div class="img1 col-4 ">
+                  <img src="image/card3_3.webp" class="mh-70 w-100 " alt="">
+                </div>
+                <div class=" text-dark col-7  p-0 " style="font-size: 15px;">Contractors Master Program V3.0 (Latest)
+                  <br><span class="fw-bolder text-danger">Rs. 1196.00</span><br>
+
+                  <div style="width: 100px;" class=" text-center pt-1 rounded">
+                    <span style="cursor: pointer;" class="quantity-button m-3" onclick="decreaseQuantity()">
+                      -
+                    </span>
+                    <span id="quantity">1</span>
+                    <span style="cursor: pointer;" class="quantity-button m-3" onclick="increaseQuantity()">
+                      +
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="fixed-bottom">
+              <div class="row">
+                <div class="col text-center p-4"><i class="fa-solid fa-pen" style="color: #000000;"></i><br>note</div>
+
+                <div class="col text-center p-4"><i class="fa-solid fa-truck-fast"
+                    style="color: #000000;"></i><br>shipping</div>
+              </div>
+              <div class="row">
+                <div class="col-6 text-left p-3">Subtotal</div>
+                <div class="col-6 text-end p-3">Rs. 1,196.00</div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <button class="col btn fw-bolder chechout_row "> <a href="" class="check_out"> CHECK OUT</a></button>
+                </div>
+                <div class="row">
+                  <div class="col btn"> <a href="" class="view_cart"> VIEW CART </a></div>
+                </div>
+
+              </div>
+            </div>
+            </header>
+
+            <!-- Add more products or customize as needed -->
+
+
+            <!-- *************************addToCart_end************************ -->
+
+                <!-- *********************search_bar_start_here********************** -->
+          
+
+             <!-- *********************search_bar_end_here********************** -->
+
+        </div><!--container  ends here -->
+      </nav> <!--nav ends here -->
+
+       <!-- bottom nav start here  -->
+       <div class="bg-white fixed-bottom">
+        <div class="container-fluid text-center border d-block d-md-none">
+          <div class="row fs-5 mt-3 mb-3">
+            <div class="col">
+              <a href="" class="nav-link"><i class="fa-solid fa-house"></i></a>
+            </div>
+            <div class="col">
+              <a href="" class="nav-link"><i class="fa-solid fa-table-cells-large"></i></a>
+            </div>
+            <div class="col">
+              <a href="" class="nav-link"><i class="fa-solid fa-cart-plus"></i></a>
+            </div>
+            <div class="col">
+              <a href="" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+      
+
+    <!-- main starts here  -->
+    <main class="main-content-policy mt-2 mb-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="policy-title text-center mt-4">
+              <h2>Privacy policy</h2>
+            </div>
+            <div class="rte mt-5 mb-5">
+              <p>
+                At Scalekite, accessible from https://scalekite.com/, one of our
+                main priorities is the privacy of our visitors. This Privacy
+                Policy document contains types of information that is collected
+                and recorded by Scalekite and how we use it.
+              </p>
+              <p>
+                If you have additional questions or require more information
+                about our Privacy Policy, do not hesitate to contact us.
+              </p>
+              <p>
+                This Privacy Policy applies only to our online activities and is
+                valid for visitors to our website with regard to the information
+                that they shared and/or collect in Scalekite. This policy is not
+                applicable to any information collected offline or via channels
+                other than this website.
+              </p>
+
+              <h4>Concent</h4>
+              <p>
+                By using our website, you hereby consent to our Privacy Policy
+                and agree to its terms.
+              </p>
+              <h4>Information we collect</h4>
+              <p>
+                The personal information that you are asked to provide, and the
+                reasons why you are asked to provide it, will be made clear to
+                you at the point we ask you to provide your personal
+                information.
+              </p>
+              <p>
+                If you contact us directly, we may receive additional
+                information about you such as your name, email address, phone
+                number, the contents of the message and/or attachments you may
+                send us, and any other information you may choose to provide.
+              </p>
+              <p>
+                When you register for an Account, we may ask for your contact
+                information, including items such as name, company name,
+                address, email address, and telephone number.
+              </p>
+
+              <h4>How we use your information</h4>
+
+              <p>
+                We use the information we collect in various ways, including:
+              </p>
+              <ul>
+                <li>Provide, operate, and maintain our website</li>
+                <li>Improve, personalize, and expand our website</li>
+                <li>Understand and analyze how you use our website</li>
+                <li>
+                  Develop new products, services, features, and functionality
+                </li>
+                <li>
+                  Communicate with you, either directly or through one of our
+                  partners, including for customer service, to provide you with
+                  updates and other information relating to the website, and for
+                  marketing and promotional purposes
+                </li>
+                <li>Send you emails</li>
+                <li>Find and prevent fraud</li>
+              </ul>
+              <h4>Log Files</h4>
+              <p>
+                Scalekite follows a standard procedure of using log files. These
+                files log visitors when they visit websites. All hosting
+                companies do this and a part of hosting services’ analytics. The
+                information collected by log files include internet protocol
+                (IP) addresses, browser type, Internet Service Provider (ISP),
+                date and time stamp, referring/exit pages, and possibly the
+                number of clicks. These are not linked to any information that
+                is personally identifiable. The purpose of the information is
+                for analyzing trends, administering the site, tracking users’
+                movement on the website, and gathering demographic information.
+              </p>
+              <h4>Cookies and Web Beacons</h4>
+              <p>
+                ike any other website, Scalekite uses ‘cookies’. These cookies
+                are used to store information including visitors’ preferences,
+                and the pages on the website that the visitor accessed or
+                visited. The information is used to optimize the users’
+                experience by customizing our web page content based on
+                visitors’ browser type and/or other information.
+              </p>
+              <p>
+                For more general information on cookies, please read the Cookies
+                article on TermsFeed website.
+              </p>
+              <h4>Advertising Partners Privacy Policies</h4>
+              <p>
+                You may consult this list to find the Privacy Policy for each of
+                the advertising partners of Scalekite.
+              </p>
+              <p>
+                Third-party ad servers or ad networks uses technologies like
+                cookies, JavaScript, or Web Beacons that are used in their
+                respective advertisements and links that appear on Scalekite,
+                which are sent directly to users’ browser. They automatically
+                receive your IP address when this occurs. These technologies are
+                used to measure the effectiveness of their advertising campaigns
+                and/or to personalize the advertising content that you see on
+                websites that you visit.
+              </p>
+              <p>
+                Note that Scalekite has no access to or control over these
+                cookies that are used by third-party advertisers.
+              </p>
+              <h4>Third-Party Privacy Policies</h4>
+              <p>
+                Scalekite's Privacy Policy does not apply to other advertisers
+                or websites. Thus, we are advising you to consult the respective
+                Privacy Policies of these third-party ad servers for more
+                detailed information. It may include their practices and
+                instructions about how to opt-out of certain options.
+              </p>
+              <p>
+                You can choose to disable cookies through your individual
+                browser options. To know more detailed information about cookie
+                management with specific web browsers, it can be found on their
+                respective websites.
+              </p>
+              <h4>CCPA Privacy Rights (Do Not Sell My Personal Information)</h4>
+              <p>
+                Under the CCPA, among other rights, California consumers have
+                the right to:
+              </p>
+              <p>
+                Request that a business that collects a consumer’s personal data
+                disclose the categories and specific pieces of personal data
+                that a business has collected about consumers.
+              </p>
+              <p>
+                Request that a business deletes any personal data about the
+                consumer that a business has collected.
+              </p>
+              <p>
+                Request that a business that sells a consumer’s personal data,
+                not sell the consumer’s personal data.
+              </p>
+              <p>
+                If you make a request, we have one month to respond to you. If
+                you would like to exercise any of these rights, please contact
+                us.
+              </p>
+              <h4>GDPR Data Protection Rights</h4>
+              <p>
+                We would like to make sure you are fully aware of all of your
+                data protection rights. Every user is entitled to the following:
+              </p>
+              <p>
+                The right to access – You have the right to request copies of
+                your personal data. We may charge you a small fee for this
+                service.
+              </p>
+              <p>
+                The right to rectification – You have the right to request that
+                we correct any information you believe is inaccurate. You also
+                have the right to request that we complete the information you
+                believe is incomplete.
+              </p>
+              <p>
+                The right to erasure – You have the right to request that we
+                erase your personal data, under certain conditions.
+              </p>
+              <p>
+                The right to restrict processing – You have the right to request
+                that we restrict the processing of your personal data, under
+                certain conditions.
+              </p>
+              <p>
+                The right to object to processing – You have the right to object
+                to our processing of your personal data, under certain
+                conditions.
+              </p>
+              <p>
+                The right to data portability – You have the right to request
+                that we transfer the data that we have collected to another
+                organization, or directly to you, under certain conditions.
+              </p>
+              <p>
+                If you make a request, we have one month to respond to you. If
+                you would like to exercise any of these rights, please contact
+                us.
+              </p>
+              <h4>Children’s Information</h4>
+              <p>
+                Another part of our priority is adding protection for children
+                while using the internet. We encourage parents and guardians to
+                observe, participate in, and/or monitor and guide their online
+                activity.
+              </p>
+              <p>
+                Scalekite does not knowingly collect any Personal Identifiable
+                Information from children under the age of 13. If you think that
+                your child provided this kind of information on our website, we
+                strongly encourage you to contact us immediately and we will do
+                our best efforts to promptly remove such information from our
+                records.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+     <!-- main end here  -->
+    <!--  Footer -->
+    <footer class="position-relative w-100" id="footer">
+      <!-- about company and information goes here  -->
+
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <img src="/image/sCALEKITE_LOGO1.jpg" class="img-fluid" alt="logo" />
+            <p>Helping your Businesses Scale!</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="company-info1 d-none d-md-block">
+              <ul style="list-style-type: none">
+                <h4>Company</h4>
+                <li class="mb-1">About</li>
+                <li class="mb-1">Contact Us</li>
+                <li class="mb-1">Return and refund policy</li>
+              </ul>
+            </div>
+            <div
+              class="accordion accordion-flush d-block d-md-none accordion-footer"
+              id="accordionFlushExample"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    <h6>Company</h6>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <ul style="list-style-type: none">
+                    <li class="mb-1">About</li>
+                    <li class="mb-1">Contact Us</li>
+                    <li class="mb-1">Return and refund policy</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="company-info2 d-none d-md-block">
+              <ul style="list-style-type: none">
+                <h4>Information</h4>
+                <li class="mb-1">Shop</li>
+                <li class="mb-1">Privacy Policy</li>
+                <li class="mb-1">Terms and Conditions</li>
+              </ul>
+            </div>
+            <div
+              class="accordion accordion-flush d-block d-md-none accordion-footer"
+              id="accordionFlushExample"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapsetwo"
+                  >
+                    <h6>Information</h6>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <ul style="list-style-type: none">
+                    <li class="mb-1">Shop</li>
+                    <li class="mb-1">Privacy Policy</li>
+                    <li class="mb-1">Terms and Conditions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about company and information ends  here  -->
+
+      <!-- copy right and social media handle goes here -->
+      <div class="  py-4" id="footer-icons">
+        <div class="container w-100">
+          <div class="row">
+            <div
+              class="col-md-6 text-center text-white text-md-left mb-3 mb-md-0"
+            >
+              &copy; 2024 SCALEKITE
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+              <div class="social-icons">
+                <a href="#" title="Facebook"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- copy right and social media handle ends  here -->
+    </footer>
+
+    <!-- footer ends here  -->
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+    <script src="pagesJs.js"> </script>
+   
+  </body>
+</html>

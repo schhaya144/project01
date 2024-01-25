@@ -1,0 +1,376 @@
+/* Customize your styles here */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center the logo */
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* menubar styling  */
+#manu-navbar li {
+  position: relative;
+  font-weight: bolder;
+}
+
+#manu-navbar li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+#manu-navbar li a:hover::after {
+  width: 100%;
+}
+
+/* Navbar ens here  */
+@media (max-width: 992px) {
+  #manu-navbar li a:hover::after {
+    width: 0%;
+  }
+}
+/* navbar toggler goes here  */
+#navbarToggler {
+  --bs-navbar-toggler-border-color: none;
+  --bs-navbar-toggler-focus-width: none;
+}
+/* close button toggler css */
+#togglerClosebtn {
+  --bs-btn-close-focus-shadow: none;
+}
+
+
+
+
+
+/* Footer css  */
+
+
+/* for social media handles  */
+.social-icons a {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #aeb1b4;
+}
+
+.social-icons a:hover {
+  color: black;
+}
+
+#footer-icons {
+  background-color: black;
+}
+
+@media (max-width: 767px) {
+  #footer {
+    padding-bottom: 60px;
+  }
+
+  #footer-icons {
+    background-color: #eae5e5;
+  }
+
+  .social-icons {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+  }
+}
+
+/* footer css end here  */
+
+
+
+/* *********addToCart*********** */
+#cart-page {
+  width: 390px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.chechout_row {
+  border-radius: 30px;
+  background-color: black;
+  transition: width 2s;
+  margin: 10px;
+
+}
+
+.chechout_row:hover {
+  background-color: black;
+  transform: scale(1.01);
+  border-radius: 50px;
+
+}
+
+.check_out {
+  text-decoration: none;
+  color: white;
+}
+
+.view_cart {
+  color: #000000;
+}
+
+
+/* *********addToCart*********** */
+
+
+
+/* *********search_start*********** */
+
+body {
+  overflow-x: hidden;
+}
+
+#search-slider {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 20vh;
+  background-color: #F8F9FA;
+  transition: top 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+#search-content {
+  padding: 20px;
+}
+
+
+
+/* *********search_end*********** */
+
+
+
+/* foote company and information   css goes here  */
+.accordion-footer {
+  /* max-width: 700px; */
+  margin: 0 auto;
+  --bs-accordion-active-bg: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.company-info1 li {
+  position: relative;
+  overflow: hidden;
+}
+
+.company-info1 li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.company-info1 li:hover::before {
+  width: 50%;
+}
+
+.company-info2 li {
+  position: relative;
+  overflow: hidden;
+}
+
+.company-info2 li::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.company-info2 li:hover::before {
+  width: 40%;
+}
+
+/* .company-information end  *
+
+/* ********************contact us components Style goes here****************  */
+
+.contactUs-main {
+  position: relative;
+  top: 40px;
+}
+#contact-details-box {
+  position: relative;
+  top: 50px;
+}
+
+.home-page a:hover {
+  color: gray;
+}
+
+
+.submit-now-btn {
+  height: 50px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  transition: width 2s;
+}
+.submit-now-btn:hover {
+  transform: scale(1.1);
+}
+
+/* #contact-footer {
+  position: relative;
+  top: 200px;
+} */
+/* **************************contact us page styling ends here******************  */
+
+/* **************************wishlist_psge_styling_start here********************** */
+
+#wishlist {
+  /* top: 200px; */
+  background-color: #d5ccc3;
+}
+
+#submit-now-btn {
+  height: 50px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  transition: width 2s;
+}
+#submit-now-btn:hover {
+  color: white;
+  background-color: black;
+  transform: scale(1.1);
+}
+/* *************************wishlist_psge_styling_end****************************** */
+
+/* **********************shop footer img styling goes here***************** */
+#shopyfi-img {
+  border: none;
+  width: 18rem;
+}
+
+@media (max-width: 640px) {
+  #shopyfi-img {
+    width: 100%;
+  }
+  #shopyfi-img a img {
+    transform: scale(1);
+  }
+}
+
+.shop-img {
+  overflow: hidden;
+  transition: transform 0.4s ease-out;
+}
+
+.shop-img:hover {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+/* ******************shop footer img styling ends here********************** */
+
+
+
+/* **********************************Footer css******************************  */
+
+/* for social media handles  */
+#footer {
+  position: relative;
+  top: 90px;
+}
+.social-icons a {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #aeb1b4;
+}
+.social-icons a:hover {
+  color: black;
+}
+#footer-icons {
+  background-color: black;
+}
+@media (max-width: 767px) {
+  #footer {
+    padding-bottom: 60px;
+  }
+  #footer-icons {
+    background-color: #eae5e5;
+  }
+  .social-icons {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .social-icons a {
+    margin-right: 10px;
+  }
+}
+/* *******lower footer css end here*******  */
+
+/* ******foote company and information   css goes here******  */
+.accordion-footer {
+  /* max-width: 700px; */
+  margin: 0 auto;
+  --bs-accordion-active-bg: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.company-info1 li {
+  position: relative;
+  overflow: hidden;
+}
+
+.company-info1 li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.company-info1 li:hover::before {
+  width: 50%;
+}
+.company-info2 li {
+  position: relative;
+  overflow: hidden;
+}
+
+.company-info2 li::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.company-info2 li:hover::before {
+  width: 40%;
+}
+
+/* .company-information end  *
+ /* ****************************footer ends*************************************  */

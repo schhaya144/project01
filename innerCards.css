@@ -1,0 +1,165 @@
+/* ************wedding planner page for shop styling goes here******************  */
+/* right side container styling  */
+
+/* for scrollbar  */
+#bought-book {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  @media (max-width: 768px) {
+    #bought-book {
+      max-height: 100%;
+      overflow-y: hidden;
+    }
+  }
+  #bought-book::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge (pre-Chromium versions), and Firefox */
+  #bought-book {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  /* wishlist button on right side styling */
+  #wish-list-shop {
+    position: absolute;
+    top: 3%;
+    right: 4%;
+    transform: translateY(-50%);
+    display: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px;
+    border-radius: 33px;
+  }
+  #wish-list-shop:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  #bought-book:hover #wish-list-shop {
+    display: block;
+  }
+  /* wishlist styling end here  */
+  
+  /* *******right side styling end here*****  */
+  
+  
+  
+  
+  
+  /* *****left side styling******  */
+  /* main image styling goes here  */
+  #main-image {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #main-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #main-image:hover .carousel-control {
+    opacity: 1;
+  }
+  /* main image styling ends here  */
+  
+  /* thumbnail styling goes here  */
+  .thumbnail {
+    margin-bottom: 5px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+  }
+  
+  .thumbnail-container {
+    margin-top: 10px;
+  }
+  #thumbnail-container {
+    display: flex;
+    flex-direction: column;
+  }
+  /* thumbnail styling goes here  */
+  
+  /* for previous and next button styling */
+  .carousel-control {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .carousel-control.left {
+    left: 0;
+    top: 50%;
+    transform: translateX(-100%);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 33px;
+  }
+  .carousel-control.left:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  /* previous button end  */
+  
+  /* for next button  */
+  .carousel-control.right {
+    right: 0;
+    top: 50%;
+    transform: translateX(100%);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 33px;
+  }
+  .carousel-control.right:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  /* next button ends here  */
+  #main-image:hover .carousel-control.left {
+    transform: translateX(10%);
+  }
+  
+  #main-image:hover .carousel-control.right {
+    transform: translateX(-10%);
+  }
+  /* for previous and next button styling end here  */
+  
+  /* for  zoom in button on image   */
+  #zoom-in-button {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    transform: translateY(-50%);
+    display: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 33px;
+  }
+  #zoom-in-button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  #main-image:hover #zoom-in-button {
+    display: block;
+  }
+  /* end for zoom in button  */
+  /* ************wedding planner page for shop styling ends here******************  */
+  

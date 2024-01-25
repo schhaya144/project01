@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>InnerCard</title>
+    <!-- css file  -->
+   
+    <link rel="stylesheet" href="/pagesStyle.css">
+    <link rel="stylesheet" href="/innerCards.css">
+
+    <!-- bootstrap  cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- font awesome cdn  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        
+    </style>
+
+</head>
+
+<body>
+
+  
+
+    <!-- navbar section  -->
+    <header class="m-2">
+        <!-- nav start  -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container ">
+                <!-- center logo  -->
+                <div class="navbar-brand">
+                    <img src="image/sCALEKITE_LOGO1.jpg" alt="" class="img-fluid" height="47" width="140" />
+                </div>
+                <button class="navbar-toggler" id="navbarToggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+
+                        <button type="button" class="btn-close" id="togglerClosebtn" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            SCALEKITE
+                        </h5>
+                    </div>
+                    <!-- menubar items on the left  -->
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 fw-medium" id="manu-navbar">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index (6).html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Icons on the right  -->
+                <div class="d-flex align-items-center ml-auto">
+                    <a class="nav-link pe-3" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="search"
+                        onclick="toggleSearchSlider()">
+                        <i class="fa-solid fa-magnifying-glass fa-lg" style="color: rgb(0, 0, 0)"></i>
+                    </a>
+                    <a class="nav-link d-none d-lg-inline pe-3" href="#" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" title="Wish-list">
+                        <i class="fa-regular fa-star fa-lg" style="color: rgb(0, 0, 0)"></i>
+                    </a>
+                    <a class="nav-link pe-3" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cart">
+                        <i class="fa-solid fa-cart-shopping fa-lg" style="color: rgb(0, 0, 0)"></i>
+                    </a>
+                </div> <!--nav itcons ends here -->
+
+                <!-- *********************search_bar_start_here********************** -->
+
+                <div id="search-slider">
+                    <div id="search-content">
+
+                        <!-- Your search form goes here -->
+                        <form class="row justify-content-around m-3">
+                            <div class="col-3"> <img src="image/sCALEKITE_LOGO1.jpg" height="60px" width="150px" alt="">
+                            </div>
+                            <div class="col-6 row">
+                                <div class="col-11 p-0 m-0"><input class="form-control mr-sm-2 "
+                                        style="border: 2px solid black;" type="search" placeholder="Search"
+                                        aria-label="Search"></div>
+                                <div class="col-1 p-0 m-0"
+                                    style="border-right: 2px solid black; border-bottom: 2px solid black; border-top: 2px solid black;height: 40px;">
+                                    <button class="btn border-0 my-2 my-sm-0 col-1" type="submit"> <i
+                                            class="fa-solid fa-magnifying-glass "></i></button>
+                                </div>
+                            </div>
+                            <div class="col-3 row">
+                                <div class="col-10"></div>
+                                <a class="nav-link d-none d-lg-inline mt-2 col-1 " href="#" data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom" title="Wish-list">
+                                    <i class="fa-regular fa-star fa-lg"></i>
+                                </a>
+                                <a class="nav-link pe-3 col-1 mt-2 " href="#" data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom" title="Cart">
+                                    <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                                </a>
+
+                            </div>
+                        </form>
+
+                        <div class="d-flex justify-content-center">
+                            <span class="text-secondary"> Popular Searches:</span>
+                            <span><a class="link-dark" href="">Contractors</a></span> <span><a class="link-dark"
+                                    href="">Excel
+                                    templates</a></span> <span><a class="link-dark" href="">All access pass</a></span>
+                        </div>
+                        <div class="row position-relative" style="width: 40px; bottom: 10px; left: 1500px;">
+                            <button type="button" class="close  border-0 " aria-label="Close"
+                                onclick="toggleSearchSlider()">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- *********************search_bar_end_here********************** -->
+
+                <!-- *************************addToCart_start************************ -->
+
+                <!-- Add to Cart page -->
+                <div id="cart-page" class="position-fixed top-0 end-0 vh-100 overflow-auto bg-white">
+                    <div class="p-3">
+
+                        <h5 class="mb-1">Shopping Cart <span><button type="button" class=" btn-close m-3 ml-5"
+                                    onclick="closeCartPage()"></button></span></h5>
+
+
+                        <p style="font-size: 14px;">🔥 These products are limited, checkout within 4 m 20 s</p>
+                        <!-- Add your cart items here -->
+                        <div class="">
+                            <div class="row">
+                                <div class="img1 col-4 ">
+                                    <img src="image/card3_3.webp" class="mh-70 w-100 " alt="">
+                                </div>
+                                <div class=" text-dark col-7  p-0 " style="font-size: 15px;">Contractors Master Program
+                                    V3.0
+                                    (Latest)
+                                    <br><span class="fw-bolder text-danger">Rs. 1196.00</span><br>
+
+                                    <div style="width: 100px;" class=" text-center pt-1 rounded">
+                                        <span style="cursor: pointer;" class="quantity-button m-3"
+                                            onclick="decreaseQuantity()">
+                                            -
+                                        </span>
+                                        <span id="quantity">1</span>
+                                        <span style="cursor: pointer;" class="quantity-button m-3"
+                                            onclick="increaseQuantity()">
+                                            +
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fixed-bottom">
+                            <div class="row">
+                                <div class="col text-center p-4"><i class="fa-solid fa-pen"
+                                        style="color: #000000;"></i><br>note</div>
+
+                                <div class="col text-center p-4"><i class="fa-solid fa-truck-fast"
+                                        style="color: #000000;"></i><br>shipping</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 text-left p-3">Subtotal</div>
+                                <div class="col-6 text-end p-3">Rs. 1,196.00</div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <button class="col btn fw-bolder chechout_row "> <a href="" class="check_out"> CHECK
+                                            OUT</a></button>
+                                </div>
+                                <div class="row">
+                                    <div class="col btn"> <a href="" class="view_cart"> VIEW CART </a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- *************************addToCart_end************************ -->
+
+                    </div><!--container  ends here -->
+        </nav> <!--nav ends here -->
+
+        <!-- bottom nav start here  -->
+        <div class="bg-white fixed-bottom">
+            <div class="container-fluid text-center border d-block d-md-none">
+                <div class="row fs-5 mt-3 mb-3">
+                    <div class="col">
+                        <a href="" class="nav-link"><i class="fa-solid fa-house"></i></a>
+                    </div>
+                    <div class="col">
+                        <a href="" class="nav-link"><i class="fa-solid fa-table-cells-large"></i></a>
+                    </div>
+                    <div class="col">
+                        <a href="" class="nav-link"><i class="fa-solid fa-cart-plus"></i></a>
+                    </div>
+                    <div class="col">
+                        <a href="" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- navbar end  -->
+
+
+    <!-- main start here -->
+    <main class="contactUs-main">
+        <div class="container-fluid">
+            <div class="row gap-2">
+                <div class="contact-main">
+                    <!-- links start here  -->
+                    <div class="page-link d-flex justify-content-center">
+                        <div class="home-page d-flex">
+                            <a class="nav-link" href="/index.html">
+                                <span>Home &nbsp; > &nbsp; </span>
+                            </a>
+                            <a class="nav-link" href="/index.html">
+                                <span>Shop &nbsp; > &nbsp; </span>
+                            </a>
+                        </div>
+                        <div class="book-desc">33+ Ultimate Wedding Planner collection</div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <!--  link ends here -->
+
+
+
+
+
+
+
+            <!-- books details -->
+            <div class="books-detail m-4 mt-5">
+                <div class="row">
+                    <div class="col-12 col-md-6 ms-auto d-flex">
+
+                        <!-- Left Side - Thumbnails -->
+                        <div class="col-2 ">
+                            <div id="thumbnail-container" class="thumbnail-container">
+                                <img class="thumbnail img-fluid h-50 w-75" src="/image/card1_1.webp" alt="Thumbnail 1"
+                                    data-target="0">
+                                <img class="thumbnail img-fluid  h-50 w-75" src="/image/card3.webp" alt="Thumbnail 2"
+                                    data-target="1">
+                                <img class="thumbnail img-fluid  h-50 w-75" src="/image/card3_3.webp" alt="Thumbnail 3"
+                                    data-target="2">
+                                <!-- Add more thumbnails as needed -->
+                            </div>
+                        </div>
+                        <!-- Right Side - Main Image -->
+                        <div class="col-10">
+                            <div id="main-image">
+                                <img id="main-img" class="" src="/image/card1_1.webp" alt="Main Image">
+                                <button class="carousel-control left " onclick="prevImage()"><i
+                                        class="fa-solid fa-arrow-left "></i></button>
+                                <button class="carousel-control right" onclick="nextImage()"><i
+                                        class="fa-solid fa-arrow-right"></i></button>
+
+                                <button class="btn btn-outline-light" id="zoom-in-button" data-bs-toggle="tooltip"
+                                    data-bs-placement="left" title="Zoon-in">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i></button>
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+
+                    <div class="col-12 col-md-6 me-auto" id="bought-book">
+                        <h4>33+ Ultimate Wedding Planner collection</h4>
+                        <!-- add to wishlist button -->
+                        <button class="btn btn-outline-light" id="wish-list-shop" data-bs-toggle="tooltip"
+                            data-bs-placement="left" title="Add to cart">
+                            <i class="fa-regular fa-star fa-lg"></i></button><!--button end here-->
+
+
+                        <div class="text-danger fw-bold"> RS. 4999.00
+                            <del class="text-secondary">Rs. 199.00</del>
+                        </div>
+                        <p>Tax included.</p>
+
+                        <!-- list items  -->
+                        <div>
+                            <ul class="list-group" style="list-style-type: none">
+                                <li>
+                                    ✅ 33 Pages of Printable Wedding Planner Pages | Wedding Plan Bundle | Wedding
+                                    Planning Book | Wedding Planner PDF, A4,A5, 2024
+                                </li>
+                                <li>✅ Lifetime Access</li>
+                                <li>✅ One Time Payment</li>
+                                <li>✅ Instant Access</li>
+                                <li>✅ 24/7 Dedicated Support</li>
+                            </ul>
+                        </div>
+                        <!-- list end  -->
+
+                        <!-- visitor  -->
+                        <div class="site-visitors mt-3">
+                            <p id="visitor-count">
+                                <i class="fa-regular fa-eye"></i>22 people are viewing this right
+                                now
+                            </p>
+                        </div>
+                        <!-- visitor end  -->
+                        <!-- freFrequently bought together box start  -->
+                        <div class="frequently-bought-book">
+                            <p class="text-danger">
+                                <i class="fa-solid fa-percent"></i> You will get 30% OFF on each product
+                            </p>
+                            <div class="border border-black p-2">
+                                <div class="d-flex justify-content-between">
+                                    <input type="checkbox" class="d-block d-md-none">
+                                    <img src="/image/card1_1.webp" alt="" class="img-fluid h-25 w-25">
+                                    <p class="ps-3">33+ Ultimate Wedding Planner collection <br>
+                                        Rs. 199.00
+                                    </p>
+                                    <div class="d-none d-md-block"> <button type="button"
+                                            class="btn btn-outline-secondary border-0" disabled>this item</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between">
+                                    <input type="checkbox" class="d-block d-md-none">
+                                    <img src="/image/card3_3.webp" alt="" class="img-fluid h-25 w-25">
+                                    <p class="ps-3">55+ Wedding Checklist Mega Collection <br>
+                                        Rs. 199.00</p>
+                                    <div class="d-none d-md-block "><button type="button"
+                                            class="btn btn-dark">Select</button></div>
+                                </div>
+                                <hr>
+                                <div class="d-flex">
+                                    <p>Total price : </p>
+                                    <p class="fw-bolder"> &nbsp;Rs. 0.00</p>
+
+                                </div>
+                                <div class="buy-btn d-grid mt-4">
+                                    <button class="btn btn-dark buy-now-btn" type="button">
+                                        Add selected item(s)
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- freFrequently bought together box start  -->
+                            <!-- Add cart sections  -->
+                            <div class="add-cart-btn mt-4">
+                                <h6>Quantity</h6>
+                                <div class="">
+                                    <div class="quantity-container d-flex justify-content-between m-3">
+                                        <div class="border border-dark-subtle bg-dark-subtle text-center pt-1 rounded ">
+                                            <span class="quantity-button " style="cursor: pointer;"
+                                                onclick="decreaseQuantity()">
+                                                -
+                                            </span>
+                                            <span class="p-3 m-3" id="quantity">1</span>
+                                            <span class="quantity-button " style="cursor: pointer;"
+                                                onclick="increaseQuantity()">
+                                                +
+                                            </span>
+                                        </div>
+                                        <div class="ms-auto ">
+                                            <button type="button" class="btn btn-outline-dark ps-5 pe-5 rounded-5">
+                                                ADD TO CART
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="buy-btn d-grid mt-4">
+                                    <button class="btn btn-dark buy-now-btn" type="button">
+                                        Buy it Now
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- cart section end  -->
+
+                            <!-- customer help start  -->
+
+                            <div class="customer-help d-flex mt-4">
+                                <div class="ask-help">
+                                    <i class="fa-solid fa-question"></i>
+                                    <span> Ask a question</span>
+                                </div>
+                                <div class="shre-file mx-auto">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <span>Share</span>
+                                </div>
+                            </div>
+
+                            <!-- customer help section end  -->
+                            <hr />
+
+                            <!-- product trust badges  -->
+                            <div class="product-trust-badges text-center mb-5 mt-5">
+                                <img src="/product-trust-badge-payment-cards.jpg" alt="payment-cards"
+                                    class="img-fluid" />
+                                <h6 class="mt-3">Guarantee safe & secure checkout</h6>
+                            </div>
+                            <!-- product trust badges end  -->
+                        </div>
+                        <!-- col-12 close  -->
+                    </div>
+                    <!-- row close  -->
+                    <h6 class="text-center mb-1 mt-5 text-decoration-underline d-none d-md-block">Product Discription
+                    </h6>
+                    <hr />
+
+                    <div class="row">
+                        <!-- buisiness discription text  -->
+                        <div class="d-none d-md-block">
+                            <p class="mt-4 mb-4">Wedding Planner Printable | Printable Wedding Planner Pages | Wedding
+                                Plan Bundle | Wedding Planning Book | Wedding Planner PDF, A4, A5, 2024 This is a
+                                printable WEDDING planner to manage your wedding budget, itinerary, and timeline. It
+                                easily helps to achieve the biggest couple and wedding day goals in just a few steps.
+                                Organizing this perfect day and creating checklists is the first, big step to leading a
+                                successful and happy wedding experience. This minimalist planner will help you get
+                                organized and get the most out of your expensive time.
+                            </p>
+                            <p>Just DOWNLOAD, PRINT, and START right away! </p>
+                            <p class="p-2" style="border-bottom: 3px dotted #000; max-width: 400px;"></p>
+                            <p>YOUR PURCHASE INCLUDES</p>
+                            <ul>
+                                <li>You receive 33 printable planner pages in PDF format.</li>
+                            </ul>
+                            <p>- A5 size (5.8 x 8.3 in ~ 148 x 210 mm)</p>
+                            <p>- A4 (8.3 x 11.7 in ~ 210 x 297 mm)</p>
+                            <p>- US Letter size (8.5 x 11 in ~ 216 x 279 mm)</p>
+                            <ul>
+                                <li>Text and colors that are part of the design CAN NOT be changed.</li>
+                                <li>Colors may vary slightly depending on the computer monitor and printer you decide to
+                                    use.</li>
+                            </ul>
+                            <p class="p-2" style="border-bottom: 3px dotted #000; max-width: 400px;"></p>
+                            <p>NOTE</p>
+                            <p>The product will be delivered as INSTANT DOWNLOAD. *NO physical product will be shipped.
+                                Since this is a digital file we cannot provide returns or exchanges on downloadable
+                                items. Please ask all questions before purchasing your item.</p>
+                            <p class="p-2" style="border-bottom: 3px dotted #000; max-width: 400px;"></p>
+                            <p>HOW DOES IT WORK?</p>
+                            <ul>
+                                <li> ADD to cart and PURCHASE.</li>
+                                <li>You will be able to download all the files after </li>
+                                <li>DOWNLOAD attached PDF files</li>
+                                <li>Unzip if necessary.</li>
+                                <li>Download free software to unzip files if necessary.</li>
+                                <li>Simply print from your home printer, or send it to a local printing shop.</li>
+                                <li>You can use Adobe Acrobat Reader for free to open, view, and comment on your PDF
+                                    files if necessary.</li>
+                                <li>You can also use these planners digitally in GoodNotes App.</li>
+                            </ul>
+                            <p>Adobe Acrobat Reader: https://get.adobe.com/reader/
+                                Unzipping software: https://www.win-rar.com/start.html?&L=0
+                                GoodNotes App: https://www.goodnotes.com</p>
+                            <p class="p-2" style="border-bottom: 3px dotted #000; max-width: 400px;"></p>
+                            <p>Please do not hesitate to reach out via messenger! Feel free to write questions,
+                                comments, and suggestions.</p>
+                        </div>
+                        <div class="accordion accordion-flush d-block d-md-none accordion-footer"
+                            id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        <h6>Product Discription</h6>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <p class="mt-4 mb-4">Wedding Planner Printable | Printable Wedding Planner Pages |
+                                        Wedding Plan Bundle | Wedding Planning Book | Wedding Planner PDF, A4, A5, 2024
+                                        This is a printable WEDDING planner to manage your wedding budget, itinerary,
+                                        and timeline. It easily helps to achieve the biggest couple and wedding day
+                                        goals in just a few steps. Organizing this perfect day and creating checklists
+                                        is the first, big step to leading a successful and happy wedding experience.
+                                        This minimalist planner will help you get organized and get the most out of your
+                                        expensive time.
+                                    </p>
+                                    <p>Just DOWNLOAD, PRINT, and START right away! </p>
+                                    <p class="p-2" style="border-bottom: 3px dotted #000; max-width: 400px;"></p>
+                                    <p>YOUR PURCHASE INCLUDES</p>
+                                    <ul>
+                                        <li>You receive 33 printable planner pages in PDF format.</li>
+                                    </ul>
+                                    <p>- A5 size (5.8 x 8.3 in ~ 148 x 210 mm)</p>
+                                    <p>- A4 (8.3 x 11.7 in ~ 210 x 297 mm)</p>
+                                    <p>- US Letter size (8.5 x 11 in ~ 216 x 279 mm)</p>
+                                    <ul>
+                                        <li>Text and colors that are part of the design CAN NOT be changed.</li>
+                                        <li>Colors may vary slightly depending on the computer monitor and printer you
+                                            decide to use.</li>
+                                    </ul>
+                                    <p class="p-2" style="border-bottom: 3px dotted #000; max-width: 400px;"></p>
+                                    <p>NOTE</p>
+                                    <p>The product will be delivered as INSTANT DOWNLOAD. *NO physical product will be
+                                        shipped. Since this is a digital file we cannot provide returns or exchanges on
+                                        downloadable items. Please ask all questions before purchasing your item.</p>
+                                    <p class="p-2" style="border-bottom: 3px dotted #000; max-width: 400px;"></p>
+                                    <p>HOW DOES IT WORK?</p>
+                                    <ul>
+                                        <li> ADD to cart and PURCHASE.</li>
+                                        <li>You will be able to download all the files after </li>
+                                        <li>DOWNLOAD attached PDF files</li>
+                                        <li>Unzip if necessary.</li>
+                                        <li>Download free software to unzip files if necessary.</li>
+                                        <li>Simply print from your home printer, or send it to a local printing shop.
+                                        </li>
+                                        <li>You can use Adobe Acrobat Reader for free to open, view, and comment on your
+                                            PDF files if necessary.</li>
+                                        <li>You can also use these planners digitally in GoodNotes App.</li>
+                                    </ul>
+                                    <p>Adobe Acrobat Reader: https://get.adobe.com/reader/
+                                        Unzipping software: https://www.win-rar.com/start.html?&L=0
+                                        GoodNotes App: https://www.goodnotes.com</p>
+                                    <p class="p-2" style="border-bottom: 3px dotted #000; max-width: 400px;"></p>
+                                    <p>Please do not hesitate to reach out via messenger! Feel free to write questions,
+                                        comments, and suggestions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- discription end  -->
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- you might also like section goes here -->
+
+
+
+
+
+
+            <!-- you might also like section goes here -->
+
+
+
+
+            <!-- review section start copy -->
+            <div class="container mt-5">
+                <div class="customer-review mt-4 ">
+                    <h4>Reviews </h4><br />
+                    <div class="ps-5">
+                        <h5>Customer Reviews</h5> <br />
+                        <div class=" d-flex">
+                            <div class="col count-review">
+                                <p>No reviews yet
+                                </p>
+                            </div>
+                            <div class="ms-auto">
+                                <button type="button" class="btn btn-outline-dark">Write your Review</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- review ends here  -->
+    </main>
+    <!-- main ends here -->
+
+
+
+ 
+ 
+ <!-- footer section start -->
+    <footer class="position-relative w-100" id="footer">
+        <!-- about company and information goes here  -->
+
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="/image/sCALEKITE_LOGO1.jpg" class="img-fluid" alt="logo" />
+                    <p>Helping your Businesses Scale!</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="company-info1 d-none d-md-block">
+                        <ul style="list-style-type: none">
+                            <h4>Company</h4>
+                            <li class="mb-1"><a href="/aboutuUs.html" class="nav-link">About</a></li>
+                            <li class="mb-1"><a href="/contactUs.html" class="nav-link">Contact Us</a></li>
+                            <li class="mb-1"><a href="/refundPolicy.html" class="nav-link">Return and refund policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="accordion accordion-flush d-block d-md-none accordion-footer"
+                        id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <h6>Company</h6>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <ul style="list-style-type: none">
+                                    <li class="mb-1"><a href="/aboutuUs.html" class="nav-link">About</a></li>
+                                    <li class="mb-1"><a href="/contactUs.html" class="nav-link">Contact Us</a></li>
+                                    <li class="mb-1"><a href="/refundPolicy.html" class="nav-link">Return and refund
+                                            policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="company-info2 d-none d-md-block">
+                        <ul style="list-style-type: none">
+                            <h4>Information</h4>
+                            <li class="mb-1"><a href="" class="nav-link">Shop</a></li>
+                            <li class="mb-1"><a href="/privacyPolicy.html" class="nav-link">Privacy Policy</a></li>
+                            <li class="mb-1"><a href="" class="nav-link">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="accordion accordion-flush d-block d-md-none accordion-footer"
+                        id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapsetwo">
+                                    <h6>Information</h6>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <ul style="list-style-type: none">
+                                    <li class="mb-1"><a href="/footerShop.html" class="nav-link">Shop</a></li>
+                                    <li class="mb-1"><a href="/privacyPolicy.html" class="nav-link">Privacy Policy</a>
+                                    </li>
+                                    <li class="mb-1"><a href="/termsConsitions.html" class="nav-link">Terms and
+                                            Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about company and information ends  here  -->
+
+        <!-- copy right and social media handle goes here -->
+        <div class="  py-4" id="footer-icons">
+            <div class="container w-100">
+                <div class="row">
+                    <div class="col-md-6 text-center text-white text-md-left mb-3 mb-md-0">
+                        &copy; 2024 SCALEKITE
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="social-icons">
+                            <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copy right and social media handle ends  here -->
+    </footer>
+    <!-- footer ends here -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <!-- <script src="/pagesJs.js"></script> -->
+    <script src="/innerCards.js"></script>
+
+</body>
+
+</html>

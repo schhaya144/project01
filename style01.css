@@ -1,0 +1,467 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+/* style for aler */
+#alert{
+  bottom: 10px;
+}
+
+#lol{
+  background-color: blue;
+}
+
+
+/* style for navbar menu items  */
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+  
+
+/* menubar styling  */
+#manu-navbar li {
+  position: relative;
+  font-weight: bolder;
+}
+
+#manu-navbar li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+#manu-navbar li a:hover::after {
+  width: 100%;
+}
+
+/* *********addToCart*********** */
+#cart-page {
+  width: 390px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.chechout_row {
+  border-radius: 30px;
+  background-color: black;
+  transition: width 2s;
+  margin: 10px;
+
+}
+
+.chechout_row:hover {
+  background-color: black;
+  transform: scale(1.01);
+  border-radius: 50px;
+
+}
+
+.check_out {
+  text-decoration: none;
+  color: white;
+}
+
+.view_cart {
+  color: #000000;
+}
+
+
+/* *********addToCart*********** */
+
+
+/* *********search_start*********** */
+
+
+body {
+  overflow-x: hidden;
+}
+
+#search-slider {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 20vh;
+  background-color: #F8F9FA;
+  transition: top 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+#search-content {
+  padding: 20px;
+}
+
+/* Rest of your CSS styles */
+
+
+/* *********search_end*********** */
+
+
+/* style for book image section  */
+
+/* #img_section{
+  bottom: 30px;
+} */
+
+.img-container {
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  left: 40%;
+  transform: translate(-20%, -20%);
+  font-size: 65px;
+  color: white;
+  font-weight: bold;
+}
+.text2 {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  transform: translate(-20%, -20%);
+  font-size: 17px;
+  color: white;
+  font-weight: bold;
+}
+.button {
+  position: absolute;
+  text-align: center;
+  top: 33%;
+  left: 45%;
+  background-color: #000000;
+  border-radius: 30px;
+  width: 140px;
+  height: 40px;
+  font-weight: bolder;
+
+
+}
+#shop_btn{
+  text-decoration: none;
+  color: white;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+
+/* ********************start style for crads section******************** */
+
+#produt {
+  top: 80px;
+
+ 
+}
+#cards_container{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+#produt h2 {
+  color: #000000;
+}
+
+.card_product {
+  width: 16rem;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.6s, box-shadow 0.3s;
+  border: none;
+}
+
+.card_product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card_product .product_img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease-in-out, ;
+ }
+
+.card-body {
+  font-size: 16px;
+  text-align: center;
+  padding: px;
+  margin: 0%;
+  text-decoration: none;
+  font-weight: bolder;
+
+}
+
+.card_product a {
+
+  text-decoration: none;
+  color: #000000;
+}
+
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s;
+
+}
+
+.card_img {
+  transition: background-image 1s;
+}
+
+.card_img:hover .hover-image {
+  opacity: 1;
+}
+
+.toolpop {
+  position: absolute;
+  top: 58%;
+  right: 120px;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(0);
+  transition: opacity 0.5s, transform 0.3s;
+ 
+}
+
+
+.card_product:hover .toolpop {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.pop {
+  display: flex;
+  position: relative;
+  left: 40px;
+}
+
+.tt {
+  background-color: white;
+ color: #000000;
+  padding: 10px;
+  border: none;
+}
+
+.tt:hover {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+}
+
+/* ********************end style for crads section******************** */
+
+
+/* style for steps section  */
+
+#steps{
+  top: 150px;
+  color: #000000;
+}
+
+.steps {
+  border: none;
+}
+.steps-image {
+  transition: transform 0.4s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.steps-image:hover {
+  transform: scale(0.9);
+}
+
+/* containt text for scale business */
+#heading_text{
+  top: 300px;
+  color: #000000;
+}
+.business-scale {
+  background-color: #e1e5ff;
+  width: 100%;
+  height: 200px;
+}
+/* scale .business ends here  */
+
+/* Access pass section  */
+/* add to cart button  */
+#access{
+  top: 370px;
+  color: #000000;
+}
+.add-cart-btn {
+  width: 24rem;
+}
+@media (max-width: 1075px) {
+  .add-cart-btn {
+    width: 16rem;
+  }
+}
+
+/* buy btn  */
+.buy-now-btn {
+  width: 12rem;
+}
+@media (max-width: 992px) {
+  .buy-now-btn {
+    width: 8rem;
+  }
+}
+.buy-now-btn:hover {
+  transform: scale(1.05);
+}
+/* Access pass section ends here  */
+
+/* review section  */
+/* *****review_section_styling_start**** */
+#review{
+  top: 430px;
+}
+.horizontal-paragraphs {
+  display: flex;
+  justify-content: space-between;
+}
+.paragraph {
+  width: 18%;
+  padding: 13px;
+  margin: 5px;
+}
+
+.carousel-item {
+  --bs-carousel-transition-duration: 0.2s;
+  --bs-data-bs-interval: 0.2s;
+}
+
+/* ******star_styling***** */
+.stars {
+  color: #ffd700;
+}
+/* *****review_section_styling_end**** */
+
+/* FAQ section  */
+
+#faq_section{
+  top: 200px;
+  color: #000000;
+}
+
+
+
+/* FAQ ens here  */
+
+/* ******************subscribe section start**************** */
+
+#Subscribe{
+  top: 350px;
+}
+#subs{
+  border: 1px solid black;
+}
+
+/* ******************subscribe section end**************** */
+
+/* **********************************Footer css******************************  */
+
+/* for social media handles  */
+#footer {
+  position: relative;
+  top: 890px;
+}
+.social-icons a {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #aeb1b4;
+}
+.social-icons a:hover {
+  color: black;
+}
+#footer-icons {
+  background-color: black;
+}
+@media (max-width: 767px) {
+  #footer {
+    padding-bottom: 60px;
+  }
+  #footer-icons {
+    background-color: #eae5e5;
+  }
+  .social-icons {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .social-icons a {
+    margin-right: 10px;
+  }
+}
+/* *******lower footer css end here*******  */
+
+/* ******foote company and information   css goes here******  */
+.accordion-footer {
+  /* max-width: 700px; */
+  margin: 0 auto;
+  --bs-accordion-active-bg: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.company-info1 li {
+  position: relative;
+  overflow: hidden;
+}
+
+.company-info1 li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.company-info1 li:hover::before {
+  width: 50%;
+}
+.company-info2 li {
+  position: relative;
+  overflow: hidden;
+}
+
+.company-info2 li::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.company-info2 li:hover::before {
+  width: 40%;
+}
+
+/* .company-information end  *
+ /* ****************************footer ends*************************************  */
